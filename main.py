@@ -26,7 +26,7 @@ def return_home():
 
 
 
-@app.route('/send-email', methods=['POST'])
+@app.route('/api/send-email', methods=['POST'])
 def send_email():
     data = request.get_json()
     email = data.get('email')
